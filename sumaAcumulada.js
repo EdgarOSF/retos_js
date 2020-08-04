@@ -1,21 +1,18 @@
-const nums = [1,2,3,4];
-
 /**
  * @param {number[]} nums
  * @return {number[]}
  */
-var runningSum = arreglo => {
+var runningSum = arr => {
     
-    let acumulado = 0;
-    let resultado = [];
+    let acc = 0;
+    let res = [];
 
-    for( i = 0 ; i < arreglo.length ; i++){
-       let indice = arreglo[i];
-       acumulado += indice;
-       resultado.push(acumulado) 
+    for( i = 0 ; i < arr.length ; i++){
+        acc += arr[i];        
+        res.push(acc);
     }
    
-    return resultado;
+    return res;
 };
 
 console.log(runningSum([1,2,3,4]));
